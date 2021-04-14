@@ -26,7 +26,10 @@ describe('Visual Tests', async function() {
         eyes = new Eyes(runner);
 
         let conf = new Configuration();
-        conf.setBatch(batchInfo);
+        
+        conf.setBatch({
+            id: process.env.APPLITOOLS_BATCH_ID
+        })
         conf.setApiKey(process.env.APPLITOOLS_API_KEY);
         eyes.setConfiguration(conf);   
         
