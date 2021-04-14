@@ -34,7 +34,7 @@ describe('Visual Tests', async function() {
         eyes.setConfiguration(conf);   
         
         // yes.setServerUrl('SET_YOUR_DEDICATED_CLOUD_URL')
-        await eyes.open(browser, "Login Page Demo Classic", this.currentTest.title, new RectangleSize(800, 600));
+        await eyes.open(browser, "Login Page Demo Classics", this.currentTest.title, new RectangleSize(800, 600));
     })
     
     afterEach( async function() {
@@ -47,7 +47,7 @@ describe('Visual Tests', async function() {
         }
 
     })
-    it('Page View', async () => {
+    it('Pages View', async () => {
         // Add visual here replacing all 21 assertions in the following tests:
             // validateLabels
             // validateImages
