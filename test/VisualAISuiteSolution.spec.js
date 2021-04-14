@@ -17,12 +17,12 @@ describe('Visual Tests', async function() {
    
    
     beforeEach( async function() {
-        if(process.env.IsOriginalAppUrl==='true'){
-            await browser.url(originalAppURL);
-        }
-        else{
+        // if(process.env.IsOriginalAppUrl==='true'){
+        //     await browser.url(originalAppURL);
+        // }
+        // else{
             await browser.url(newAppURL);
-        }
+       // }
         eyes = new Eyes(runner);
 
         let conf = new Configuration();

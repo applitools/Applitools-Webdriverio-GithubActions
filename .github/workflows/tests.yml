@@ -23,8 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - run: npm i
-      - run: npm install chromedriver --detect_chromedriver_version
-
+      - run: npm install chromedriver 
       - run: npm run VisualAISuiteSolutionV1
         env: 
           APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
